@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.menu__upper {
+  height: 140px;
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111111;
+}
+.upper__title {
+  font-family: "Ubuntu";
+  color: white;
+  font-weight: 500;
+  font-size: 60px;
+}
+.upper_forms {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+.upper__input {
+  padding: 20px 90px;
+  width: 500px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background-color: #222222;
+  color: whitesmoke;
+}
+.upper__input::placeholder {
+  text-align: center;
+}
+.upper__svg {
+  position: absolute;
+  left: 40px;
+  order: 1;
+}
+.upper__ico {
+  display: flex;
+  column-gap: 30px;
+}
+.ico2:hover {
+  fill: red;
+}
+.bottom {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 3.3%;
+  text-align: left;
+  width: 100%;
+  background-color: #222222;
+  height: 60px;
+  position: relative;
+}
+
+.bottom__ul {
+  background: #222222;
+  list-style: none;
+  margin: 0;
+  height: 60px;
+}
+
+.bottom__item {
+  padding: 0 5%;
+  display: inline-block;
+  text-align: left;
+}
+
+.bottom__link {
+  color: #c8c8c8;
+  text-align: left;
+  display: block;
+  padding: 0px 40px;
+  text-decoration: none;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+}
+.n {
+  position: relative;
+}
+.n::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0;
+  height: 5px;
+  background-color: #00a650;
+  content: " ";
+  transition: width 0.2s ease-out;
+}
+.n:hover::after {
+  width: 100%;
+}
+.bottom__item:hover {
+  padding: 0 5%;
+  background: #333333;
+}
+.bottom__item:hover > .bottom__link {
+  color: #ffffff;
+}
+.drop {
+  background: #222222;
+  padding: 0;
+  text-align: left;
+  display: none;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+.bottom__item:hover > .drop {
+  display: block;
+  z-index: 2;
+}
+.boots_container {
+  padding: 0% 6% 0% 6%;
+}
+.boots_title_con {
+  text-align: center;
+}
+.boots_title {
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 3%;
+}
+.boots_img_1_con {
+  display: flex;
+  justify-content: space-around;
+  padding: 3% 0% 4% 0%;
+}
+.boots_img_2_con {
+  display: flex;
+  justify-content: space-around;
+}
+.boots_boots {
+  width: 215px;
+  height: 215px;
+  transition: 1s; /* Время эффекта */
+}
+.boots_img_3_con {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3%;
+}
+.boots_boots:hover {
+  transform: scale(1.07);
+  border: none;
+}
+.boots_sell {
+  font-size: 32px;
+  font-family: "poppins";
+  font-weight: 400;
+}
+
+.boots_cost {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(56, 40, 40);
+  margin-top: 2.5%;
+}
+.boots_boot_button {
+  height: 50px;
+  width: 170px;
+  background: rgb(244, 157, 28);
+  border: none;
+  border-radius: 100px;
+  font-family: "Lato";
+  transition: 0.7s;
+  box-shadow: 8px 8px 8px 4px rgba(34, 60, 80, 0.16);
+}
+.boots_boot_button:hover {
+  background-color: #2a9f93;
+}
+.secret-section {
+  display: none;
+  background-color: #222222;
+}
+.answer {
+  padding-top: 6%;
+  width: 100%;
+  display: grid;
+  text-align: center;
+}
+.quesstion__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0.01em;
+  color: #e74214;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.q__hr {
+  opacity: 0.3;
+}
+.summary {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  color: #fff;
+  padding-bottom: 8%;
+}
+.detail__sp {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #efefef;
+}
+.detail__sp:hover {
+  background-color: #333333;
+}
+@media (max-width: 853px) {
+
+  .upper__svg {
+    display: none;
+  }
+  .product img:hover {
+    transform: scale(1);
+  }
+  .sender__brand {
+    flex-direction: column;
+  }
+}
+@media (max-width: 801px) {
+  .bottom {
+    display: none;
+  }
+  .secret-section {
+    display: block;
+  }
+}
+@media (max-width: 726px) {
+  .slide {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .menu__upper {
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 540px) {
+  .worker__h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1260px) {
+  .boots_img_1_con,
+  .boots_img_2_con,
+  .boots_img_3_con {
+    flex-wrap: wrap;
+  }
+  .boots_form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .boots_container {
+    padding: 0% 8% 0% 8%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:1041px) {
+  .upper_forms {
+    display: none;
+  }
+}
